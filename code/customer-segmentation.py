@@ -19,7 +19,7 @@ def load_data():
 # Load dataset
 customer_data = load_data()
 
-st.title('Customer Segmentation, Churn Prediction, and Churn Drivers App')
+st.title('Customer Segmentation App')
 
 # Sidebar options
 st.sidebar.title('Navigation')
@@ -85,7 +85,7 @@ def churn_prediction_and_drivers(data):
 
 # Segment Visualization and Traits Explanation
 if options == 'Customer Segmentation':
-    st.header('Customer Segmentation')
+    st.write('#### Customer Segmentation')
 
     # Run customer segmentation
     customer_data = customer_segmentation(customer_data)
